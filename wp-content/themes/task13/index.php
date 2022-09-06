@@ -24,11 +24,11 @@
 <main>
     <div class="l-container">
         <div class="c-grouplink">
-            <a href="#"><img src="<?php bloginfo('template_directory') ?>/img/img_01_no.png" alt=""
+            <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/img_01_no.png" alt=""
                     class="js-imglink"></a>
-            <a href="#"><img src="<?php bloginfo('template_directory') ?>/img/img_02_no.png" alt=""
+            <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/img_02_no.png" alt=""
                     class="js-imglink"></a>
-            <a href="#"><img src="<?php bloginfo('template_directory') ?>/img/img_03_no.png" alt=""
+            <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/img_03_no.png" alt=""
                     class="js-imglink"></a>
         </div>
 
@@ -58,26 +58,26 @@
 							}
 						?>
 
-                    <a href="<?php the_permalink();?>"> <?php the_title();?> </a>
+                    <a href="<?php the_permalink(); ?>"> <?php the_title();?> </a>
                 </li>
                 <?php endwhile; wp_reset_postdata(); ?>
             </ul>
 
             <div class="l-btn">
-                <a href="<?php echo home_url()?>/topics" class="c-btn c-btn--small">一覧を見る</a>
+                <a href="<?php echo home_url(); ?>/topics" class="c-btn c-btn--small">一覧を見る</a>
             </div>
         </div>
         <!-- end topic -->
 
         <div class="c-grouplink">
-            <a href="#"><img src="<?php bloginfo('template_directory') ?>/img/btn_03_no.png" alt=""
+            <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/btn_03_no.png" alt=""
                     class="js-imglink"></a>
-            <a href="#"><img src="<?php bloginfo('template_directory') ?>/img/btn_04_no.png" alt=""
+            <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/btn_04_no.png" alt=""
                     class="js-imglink"></a>
         </div>
 
         <!-- access -->
-        <?php $access = get_field('access_map', 'option') ?>
+        <?php $access = get_field('access_map', 'option'); ?>
 
         <?php if($access): ?>
         <?php foreach ($access as $map): ?>
@@ -95,7 +95,7 @@
         <div class="c-access">
             <div class="c-access__info">
                 <h3 class="c-title c-title--sub"><?php echo $title ?></h3>
-                <p class="address"><?php echo $address?></p>
+                <p class="address"><?php echo $address ?></p>
                 <p class="time"><?php echo $time ?></p>
                 <br />
                 <p>

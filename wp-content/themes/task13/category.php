@@ -20,16 +20,14 @@
                             echo '<a class="c-label" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
                         }
                     ?>
-                <a href="<?php the_permalink();?>"> <?php the_title();?> </a>
+                <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
             </li>
             <?php endwhile; wp_reset_postdata(); ?>
 
         </ul>
 
         <div class="c-pnav">
-            <?php if(paginate_links()!='') {?>
-
-            <?php
+            <?php if(paginate_links()!='') {
                 global $wp_query;
                 $big = 999999999;
                 echo paginate_links( array(

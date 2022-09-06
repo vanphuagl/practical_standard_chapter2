@@ -29,8 +29,7 @@
         </ul>
 
         <div class="c-pnav">
-            <?php if (paginate_links() != '') { ?>
-            <?php
+            <?php if (paginate_links() != '') { 
                 global $wp_query;
                 $big = 999999999;
                 echo paginate_links(array(

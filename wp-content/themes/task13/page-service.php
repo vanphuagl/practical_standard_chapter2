@@ -16,7 +16,7 @@
 		</div>
 		
 		<div class="p-service__content">
-			<?php $service = get_field('service', 'option') ?>
+			<?php $service = get_field('service', 'option'); ?>
 			
 			<?php if($service): ?>
 				<?php foreach ($service as $i): ?>
@@ -25,8 +25,8 @@
 						$des = $i['describe_service'];
 					?>
 				<div class="c-service">
-					<h2 class="c-service__title"><span class="c-label c-label--white"><?php echo $i['title_service'];?></span></h2>
-					<p><?php echo $i['describe_service'];?></p>
+					<h2 class="c-service__title"><span class="c-label c-label--white"><?php echo $i['title_service']; ?></span></h2>
+					<p><?php echo $i['describe_service']; ?></p>
 				</div>
 				<?php endforeach; ?>
 			<?php endif; ?>

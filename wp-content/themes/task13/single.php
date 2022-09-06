@@ -2,7 +2,7 @@
 
 <main class="p-single">
     <div class="c-title c-title--page">
-        <h1>ニュース・お知らせ</h1>
+        <h1>TOPICS</h1>
     </div>
     <div class="l-container">
         <!-- sidebar -->

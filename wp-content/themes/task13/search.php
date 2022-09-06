@@ -28,8 +28,8 @@
         </ul>
 
         <div class="c-pnav">
-            <?php if(paginate_links()!='') {?>
-            <?php
+            <?php 
+                if(paginate_links()!='') {
                     global $wp_query;
                     $big = 999999999;
                     echo paginate_links( array(
@@ -38,12 +38,13 @@
                         'prev_text'    => '',
                         'next_text'    => '',
                     ) );
-            } ?>
+                } 
+            ?>
         </div>
 
         <?php else : ?>
-            <p class="c-notfound">投稿が見つかりません。</p>
-            
+        <p class="c-notfound">投稿が見つかりません。</p>
+
         <?php endif; ?>
     </div>
 

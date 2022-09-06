@@ -225,8 +225,9 @@ body {
 .c-back {
   text-align: center;
   margin-top: 50px;
-  margin-left: 200px;
+  margin-left: auto;
 }
+
 
 .c-back a {
   padding: 15px 30px;

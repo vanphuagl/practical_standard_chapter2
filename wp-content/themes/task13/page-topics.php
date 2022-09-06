@@ -30,7 +30,7 @@
 						echo '<a class="c-label" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
 					}
 				?>
-				<a href="<?php the_permalink();?>"> <?php the_title();?> </a>
+				<a href="<?php the_permalink(); ?>"> <?php the_title();?> </a>
 			</li>
 
 			<?php endwhile; wp_reset_postdata(); ?>
